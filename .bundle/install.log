@@ -9,3 +9,13 @@ I, [2014-03-06T14:42:39.229460 #45140]  INFO -- : 0:  rspec-expectations (2.14.5
 I, [2014-03-06T14:42:39.229759 #45140]  INFO -- : 0:  rspec-mocks (2.14.6) from /Users/Hannah/.rvm/gems/ruby-2.0.0-p353/specifications/rspec-mocks-2.14.6.gemspec
 I, [2014-03-06T14:42:39.230056 #45140]  INFO -- : 0:  rspec (2.14.1) from /Users/Hannah/.rvm/gems/ruby-2.0.0-p353/specifications/rspec-2.14.1.gemspec
 I, [2014-03-06T14:42:39.230341 #45140]  INFO -- : 0:  bundler (1.5.1) from /Users/Hannah/.rvm/gems/ruby-2.0.0-p353@global/specifications/bundler-1.5.1.gemspec
+I, [2014-03-07T13:42:09.985151 #50864]  INFO -- : 0:  coderay (1.1.0) from /Users/Hannah/.rvm/gems/ruby-2.0.0-p353/specifications/coderay-1.1.0.gemspec
+I, [2014-03-07T13:42:10.004946 #50864]  INFO -- : 0:  diff-lcs (1.2.5) from /Users/Hannah/.rvm/gems/ruby-2.0.0-p353/specifications/diff-lcs-1.2.5.gemspec
+I, [2014-03-07T13:42:10.005617 #50864]  INFO -- : 0:  method_source (0.8.2) from /Users/Hannah/.rvm/gems/ruby-2.0.0-p353/specifications/method_source-0.8.2.gemspec
+I, [2014-03-07T13:42:10.006234 #50864]  INFO -- : 0:  slop (3.4.7) from /Users/Hannah/.rvm/gems/ruby-2.0.0-p353/specifications/slop-3.4.7.gemspec
+I, [2014-03-07T13:42:10.006888 #50864]  INFO -- : 0:  pry (0.9.12.6) from /Users/Hannah/.rvm/gems/ruby-2.0.0-p353/specifications/pry-0.9.12.6.gemspec
+I, [2014-03-07T13:42:10.007547 #50864]  INFO -- : 0:  rspec-core (2.14.8) from /Users/Hannah/.rvm/gems/ruby-2.0.0-p353/specifications/rspec-core-2.14.8.gemspec
+I, [2014-03-07T13:42:10.008208 #50864]  INFO -- : 0:  rspec-expectations (2.14.5) from /Users/Hannah/.rvm/gems/ruby-2.0.0-p353/specifications/rspec-expectations-2.14.5.gemspec
+I, [2014-03-07T13:42:10.008883 #50864]  INFO -- : 0:  rspec-mocks (2.14.6) from /Users/Hannah/.rvm/gems/ruby-2.0.0-p353/specifications/rspec-mocks-2.14.6.gemspec
+I, [2014-03-07T13:42:10.009759 #50864]  INFO -- : 0:  rspec (2.14.1) from /Users/Hannah/.rvm/gems/ruby-2.0.0-p353/specifications/rspec-2.14.1.gemspec
+I, [2014-03-07T13:42:10.010525 #50864]  INFO -- : 0:  bundler (1.5.1) from /Users/Hannah/.rvm/gems/ruby-2.0.0-p353@global/specifications/bundler-1.5.1.gemspec

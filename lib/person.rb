@@ -20,4 +20,12 @@ class Person
   def refund?
     paid - initial_taxes
   end
+
+  def refund_summary
+    "#{first_name} #{last_name} will receive a refund of"
+  end
+
+  def liability_summary
+    "TAX CHEAT"
+  end
 end

@@ -8,16 +8,20 @@ CSV.foreach("tax_information.csv", headers: true) do |row|
   individual_tax_information << Person.new(row["first_name"],row["last_name"],row["annual_income"].to_f,row["tax_paid"].to_f,row["tax_rate"].to_f)
 end
 
+def format_currency(currency)
+  sprintf('$%.2f', currency)
+end
+
+
 individual_tax_information.each do |row|
   i_taxes = row.initial_taxes
   refund_status = row.refund?
     if refund_status > 0
-      binding.pry
-      individual_tax_information.refund_summary
+      puts "#{row.first_name} #{row.last_name} will receive a refund of #{format_currency(refund_status)}"
     elsif refund_status < 0
-      individual_tax_information.liability_summary
+      puts "#{row.first_name} #{row.last_name} has a tax liability of #{format_currency(refund_status.abs)}"
     else
-      puts "THIS DOESN'T HAPPEN"
+       puts "#{row.first_name} #{row.last_name} does not have any tax liability or refund."
     end
 end
 

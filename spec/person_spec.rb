@@ -15,30 +15,30 @@ describe Person do
 
 
   it "has a first name" do
-    expect(taxpayer.first_name).to eq(taxpayer_first_name)
+    expect(taxpayer.first_name).to eq("Commando")
   end
 
   it "has a last name" do
-    expect(taxpayer.last_name).to eq(taxpayer_last_name)
+    expect(taxpayer.last_name).to eq("Frog")
   end
 
   it "has an annual income" do
-    expect(taxpayer.income).to eq(taxpayer_income)
+    expect(taxpayer.income).to eq(200000)
   end
 
   it "has tax paid" do
-    expect(taxpayer.paid).to eq(taxes_paid)
+    expect(taxpayer.paid).to eq(120)
   end
 
   it "has initial taxes owed" do
-    expect(taxpayer.rate).to eq(taxpayer_rate)
+    expect(taxpayer.rate).to eq(3)
   end
 
   it "calculates what taxes were supposed to be paid" do
-    expect(taxpayer.initial_taxes).to eq(taxpayer_income * (taxpayer_rate * 0.01))
+    expect(taxpayer.initial_taxes).to eq(200000 * (3 * 0.01))
   end
 
   it "calculates amount owed or to be refunded" do
-    expect(taxpayer.refund?).to eq(taxes_paid - taxpayer.initial_taxes)
+    expect(taxpayer.refund?).to eq(120 - taxpayer.initial_taxes)
   end
 end

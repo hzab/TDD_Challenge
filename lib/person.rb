@@ -1,8 +1,23 @@
 class Person
-  def initialize(name)
+  def initialize(first_name, last_name, income, paid, rate)
+    @first_name = first_name
+    @last_name = last_name
+    @income = income
+    @paid = paid
+    @rate = rate
   end
 
-  def first_name
-    "first name"
+  attr_reader :first_name
+  attr_reader :last_name
+  attr_reader :income
+  attr_reader :paid
+  attr_reader :rate
+
+  def initial_taxes
+    income * (rate * 0.01)
+  end
+
+  def refund?
+    paid - initial_taxes
   end
 end

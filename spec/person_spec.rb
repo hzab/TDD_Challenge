@@ -3,7 +3,42 @@ require_relative '../lib/person.rb'
 
 
 describe Person do
+
+  let(:taxpayer_first_name) {"Commando" }
+  let(:taxpayer_last_name) {"Frog"}
+  let(:taxpayer_income) {200000}
+  let(:taxes_paid) {120}
+  let(:taxpayer_rate) {3}
+  let(:taxpayer) do
+    Person.new(taxpayer_first_name, taxpayer_last_name, taxpayer_income, taxes_paid, taxpayer_rate)
+  end
+
+
   it "has a first name" do
-    expect(Person.new("first name").first_name).to eq("first name")
+    expect(taxpayer.first_name).to eq(taxpayer_first_name)
+  end
+
+  it "has a last name" do
+    expect(taxpayer.last_name).to eq(taxpayer_last_name)
+  end
+
+  it "has an annual income" do
+    expect(taxpayer.income).to eq(taxpayer_income)
+  end
+
+  it "has tax paid" do
+    expect(taxpayer.paid).to eq(taxes_paid)
+  end
+
+  it "has initial taxes owed" do
+    expect(taxpayer.rate).to eq(taxpayer_rate)
+  end
+
+  it "calculates what taxes were supposed to be paid" do
+    expect(taxpayer.initial_taxes).to eq(taxpayer_income * (taxpayer_rate * 0.01))
+  end
+
+  it "calculates amount owed or to be refunded" do
+    expect(taxpayer.refund?).to eq(taxes_paid - taxpayer.initial_taxes)
   end
 end
